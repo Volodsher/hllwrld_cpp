@@ -6,10 +6,25 @@
 //  Copyright © 2023 bigriver. All rights reserved.
 //
 
+// library
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
+// this is from original xcode
+//int main(int argc, const char * argv[]) {
+//    // insert code here...
+//    std::cout << "Hello, World!\n";
+//    return 0;
+//}
+
+// this is simpler
+//the main function
+int main() {
     // insert code here...
     std::cout << "Hello, World!\n";
-    return 0;
+    // character output stream: “see-out”
+    std::cout << "       1\n";
+    std::cout << "     2 3\n";
+    std::cout << "   4 5 6\n";
+    std::cout << "7 8 9 10\n";
+    
 }
