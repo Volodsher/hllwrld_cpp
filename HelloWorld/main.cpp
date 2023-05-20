@@ -6,6 +6,21 @@
 //  Copyright © 2023 bigriver. All rights reserved.
 //
 
+// to converte F to C
+
+//#include <iostream>
+//
+//int main() {
+//    
+//    double tempf = 60;
+//    double tempc = (tempf - 32) / 1.8;
+//    
+//    std::cout << "The temp is " << tempc << " degrees Celsius.\n";
+//    
+//}
+
+
+
 // library
 #include <iostream>
 
