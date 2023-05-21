@@ -42,44 +42,78 @@
 //    std::cout << "You paid " << tip << " dollars." << "\n";
 //}
 
+//#include <iostream>
+//
+//int main() {
+//
+//    int weight;
+//    std::cout << "Enter your earth weight:";
+//    std::cin >> weight;
+//
+//    int planet;
+//    std::cout << "Enter a number for the planet you wants to fight on:";
+//    std::cin >> planet;
+//
+//    double weightOnPlanet = 0.0;
+//
+//    switch (planet) {
+//        case 1:
+//            weightOnPlanet = weight * 0.38;
+//            break;
+//        case 2:
+//            weightOnPlanet = weight * 0.91;
+//            break;
+//        case 3:
+//            weightOnPlanet = weight * 0.38;
+//            break;
+//        case 4:
+//            weightOnPlanet = weight * 2.34;
+//            break;
+//        case 5:
+//            weightOnPlanet = weight * 1.06;
+//            break;
+//        case 6:
+//            weightOnPlanet = weight * 0.92;
+//            break;
+//        case 7:
+//            weightOnPlanet = weight * 1.19;
+//            break;
+//    }
+//
+//    std::cout << weightOnPlanet << "\n";
+//    return weightOnPlanet;
+//}
+
+
 #include <iostream>
+
+// Leap Year
 
 int main() {
     
-    int weight;
-    std::cout << "Enter your earth weight:";
-    std::cin >> weight;
+    int year;
     
-    int planet;
-    std::cout << "Enter a number for the planet you wants to fight on:";
-    std::cin >> planet;
+    std::cout << "Input a year: ";
+    std::cin >> year;
     
-    double weightOnPlanet = 0.0;
+    std::string yearString = std::to_string(year);
     
-    switch (planet) {
-        case 1:
-            weightOnPlanet = weight * 0.38;
-            break;
-        case 2:
-            weightOnPlanet = weight * 0.91;
-            break;
-        case 3:
-            weightOnPlanet = weight * 0.38;
-            break;
-        case 4:
-            weightOnPlanet = weight * 2.34;
-            break;
-        case 5:
-            weightOnPlanet = weight * 1.06;
-            break;
-        case 6:
-            weightOnPlanet = weight * 0.92;
-            break;
-        case 7:
-            weightOnPlanet = weight * 1.19;
-            break;
+    if (yearString.length() != 4) {
+        std::cout << "This is not a 4 didits year.";
+    };
+    
+    if (year % 100 == 0 && year % 400 != 0) {
+        std::cout << "This is not a leap year. \n";
+    } else if (year % 400 == 0) {
+        std::cout << "This is a leap year. \n";
+    } else if (year % 4 == 0) {
+        std::cout << "This is a leap year. \n";
+    } else {
+        std::cout << "This is not a leap year. \n";
     }
-    
-    std::cout << weightOnPlanet << "\n";
-    return weightOnPlanet;
+
 }
+
+
+
+
