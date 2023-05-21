@@ -85,35 +85,54 @@
 //}
 
 
-#include <iostream>
+//#include <iostream>
+//
+//// Leap Year
+//
+//int main() {
+//
+//    int year;
+//
+//    std::cout << "Input a year: ";
+//    std::cin >> year;
+//
+//    std::string yearString = std::to_string(year);
+//
+//    if (yearString.length() != 4) {
+//        std::cout << "This is not a 4 didits year.";
+//    };
+//
+//    if (year % 100 == 0 && year % 400 != 0) {
+//        std::cout << "This is not a leap year. \n";
+//    } else if (year % 400 == 0) {
+//        std::cout << "This is a leap year. \n";
+//    } else if (year % 4 == 0) {
+//        std::cout << "This is a leap year. \n";
+//    } else {
+//        std::cout << "This is not a leap year. \n";
+//    }
+//
+//}
 
-// Leap Year
+// Converter from C to F
+
+#include<iostream>
+//#include<conio.h>
+using namespace std;
 
 int main() {
+    float C;
+    float F;
     
-    int year;
+    cout<<"Input temperature in Celsius is = ";
+    cin>>C;
     
-    std::cout << "Input a year: ";
-    std::cin >> year;
+    F = C * 9/5 + 32;
     
-    std::string yearString = std::to_string(year);
     
-    if (yearString.length() != 4) {
-        std::cout << "This is not a 4 didits year.";
-    };
+    cout<<F<<"\n";
+    return 0;
     
-    if (year % 100 == 0 && year % 400 != 0) {
-        std::cout << "This is not a leap year. \n";
-    } else if (year % 400 == 0) {
-        std::cout << "This is a leap year. \n";
-    } else if (year % 4 == 0) {
-        std::cout << "This is a leap year. \n";
-    } else {
-        std::cout << "This is not a leap year. \n";
-    }
-
 }
-
-
 
 
