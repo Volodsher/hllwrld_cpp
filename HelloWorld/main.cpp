@@ -116,23 +116,38 @@
 
 // Converter from C to F
 
-#include<iostream>
-//#include<conio.h>
-using namespace std;
+//#include<iostream>
+////#include<conio.h>
+//using namespace std;
+//
+//int main() {
+//    float C;
+//    float F;
+//
+//    cout<<"Input temperature in Celsius is = ";
+//    cin>>C;
+//
+//    F = C * 9/5 + 32;
+//
+//
+//    cout<<F<<"\n";
+//    return 0;
+//
+//}
+
+#include <iostream>
 
 int main() {
-    float C;
-    float F;
     
-    cout<<"Input temperature in Celsius is = ";
-    cin>>C;
-    
-    F = C * 9/5 + 32;
+    int i = 0;
+    int square = 0;
     
     
-    cout<<F<<"\n";
-    return 0;
-    
+    // Write a while loop here:
+    while ( i != 10 ) {
+        square = i * i;
+        std::cout << i << "   " << square << "\n";
+        i = i + 1;
+    }
 }
-
 
