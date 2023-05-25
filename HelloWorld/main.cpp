@@ -135,19 +135,31 @@
 //
 //}
 
+//}
+
+//#include <iostream>
+//
+//int main() {
+//    
+//    int i = 0;
+//    int square = 0;
+//    
+//
+//    // Write a while loop here:
+//    while ( i != 10 ) {
+//        square = i * i;
+//        std::cout << i << "   " << square << "\n";
+//        i = i + 1;
+//    }
+
 #include <iostream>
+#include <vector>
 
 int main() {
     
-    int i = 0;
-    int square = 0;
+    std::vector<double> subway_adult;
+    
+    std::vector<double> subway_child;
     
     
-    // Write a while loop here:
-    while ( i != 10 ) {
-        square = i * i;
-        std::cout << i << "   " << square << "\n";
-        i = i + 1;
-    }
 }
-
